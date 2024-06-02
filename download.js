@@ -1,6 +1,6 @@
 const path = require('path')
 const fs = require('fs')
-const get = require('simple-get')
+const get = require('./simple-get')
 const pump = require('pump')
 const tfs = require('tar-fs')
 const zlib = require('zlib')
@@ -65,10 +65,6 @@ function downloadPrebuild (downloadUrl, opts, cb) {
               })
             })
           })
-        })
-
-        req.setTimeout(30 * 1000, function () {
-          req.abort()
         })
       })
 

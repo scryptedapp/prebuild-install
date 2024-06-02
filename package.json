@@ -21,6 +21,7 @@
   "dependencies": {
     "detect-libc": "^2.0.0",
     "expand-template": "^2.0.3",
+    "follow-redirects": "^1.15.6",
     "github-from-package": "0.0.0",
     "minimist": "^1.2.3",
     "mkdirp-classic": "^0.5.3",
@@ -28,7 +29,6 @@
     "node-abi": "^3.3.0",
     "pump": "^3.0.0",
     "rc": "^1.2.7",
-    "simple-get": "^4.0.0",
     "tar-fs": "^2.0.0",
     "tunnel-agent": "^0.6.0"
   },
