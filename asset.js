@@ -1,4 +1,3 @@
-const get = require('simple-get')
 const util = require('./util')
 const proxy = require('./proxy')
 
@@ -17,6 +16,7 @@ function findAssetId (opts, cb) {
     }
   }, opts)
 
+  const get = require('simple-get')
   const req = get.concat(reqOpts, function (err, res, data) {
     if (err) return cb(err)
     log.http(res.statusCode, apiUrl)
